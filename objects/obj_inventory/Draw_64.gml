@@ -8,6 +8,7 @@ var mx = device_mouse_x_to_gui(0);
 var my = device_mouse_y_to_gui(0);
 
 var inventory_item = inventory.item_get();
+var inventory_player_item = inventory_player.item_get();
 
 if gui_visible{
 draw_set(c_black, 0.2);
@@ -117,6 +118,11 @@ for (var row = 0; row < inventory_rows; row++){
 	var inventory_index = (row * inventory_columns) + column;
 	if(inventory_index <= array_length(inventory_item)-1){
 		draw_sprite(inventory_item[inventory_index].sprite, 0, pos_x, pos_y);
+	}
+	
+	var inventory_player_index = (row * inventory_columns) + column;
+	if(inventory_player_index <= array_length(inventory_player_item)-1){
+		draw_sprite(inventory_player_item[inventory_player_index].sprite, 0, pos_x -300 +  ui_padding_x, pos_y);
 	}
 	
 	if(mx >= pos_x && mx <= pos_x + ui_inventory_box){
