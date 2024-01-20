@@ -1,6 +1,6 @@
 sprite_index = spr_player_stand;
 
-if !global.gui_open{
+if !player_stop{
 	if keyboard_check(vk_right){
 	x += 3.1;
 	sprite_index = spr_player_right;

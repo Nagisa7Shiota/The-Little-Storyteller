@@ -10,7 +10,7 @@ var my = device_mouse_y_to_gui(0);
 var inventory_item = inventory.item_get();
 var inventory_player_item = inventory_player.item_get();
 
-if gui_visible{
+if gui_visible and !obj_tls.tls_stop{
 draw_set(c_black, 0.2);
 draw_rectangle(
 	ui_padding_x + ui_border_size,

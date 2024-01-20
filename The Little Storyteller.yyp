@@ -47,6 +47,7 @@
     {"id":{"name":"Inventory","path":"scripts/Inventory/Inventory.yy",},},
     {"id":{"name":"bg_main_hall","path":"sprites/bg_main_hall/bg_main_hall.yy",},},
     {"id":{"name":"spr_elements_rock","path":"sprites/spr_elements_rock/spr_elements_rock.yy",},},
+    {"id":{"name":"obj_tls","path":"objects/obj_tls/obj_tls.yy",},},
     {"id":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},},
     {"id":{"name":"obj_item_sun","path":"objects/obj_item_sun/obj_item_sun.yy",},},
     {"id":{"name":"spr_player_left","path":"sprites/spr_player_left/spr_player_left.yy",},},

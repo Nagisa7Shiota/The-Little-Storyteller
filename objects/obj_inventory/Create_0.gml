@@ -1,14 +1,14 @@
 /// @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
 
+_is_unlocked = true;
+
 inventory_player = new Inventory();
 inventory = new Inventory();
 
 inventory.item_add("rock",spr_elements_rock);
-inventory_player.item_add("tree",spr_elements_tree);
 
 gui_visible = false;
-global.gui_open = false;
 key_released = true;
 
 display_set_gui_size(720,720);
