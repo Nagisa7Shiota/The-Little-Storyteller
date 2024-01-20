@@ -2,5 +2,9 @@
 // Sie können Ihren Code in diesem Editor schreiben
 
 
-
-_is_unlocked = false;
+if !_is_unlocked{
+	visible = false;
+}
+else {
+	visible = true;
+}

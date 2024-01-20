@@ -10,6 +10,7 @@ if(tls_counter > tls_index){
 else if!(tls_counter == 0 and tls_index == 0){
 	tls_counter = 0;
 	tls_index = 0;
+	array_delete(tls_element_text_list, 0, array_length(tls_element_text_list));
 	tls_stop = !tls_stop;
 	obj_player.player_stop = !obj_player.player_stop;
 	tls_element_text = "";

@@ -1,4 +1,6 @@
 sprite_index = spr_player_stand;
+move_wrap(true, false, 75);
+
 
 if !player_stop{
 	if keyboard_check(vk_right){
@@ -11,5 +13,3 @@ if !player_stop{
 	sprite_index = spr_player_left;
 	}
 }
-
-move_wrap(true, true, 55);

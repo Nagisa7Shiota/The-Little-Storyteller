@@ -70,7 +70,7 @@ and obj_inventory.gui_visible
 			array_push(tls_element_text_list, "Here, a tree was standing randomly around.")
 			; break;
 			case "cloud":
-			array_push(tls_element_text_list, "The sky had a few clouds.")
+			array_push(tls_element_text_list, "The sky had a few clouds, exactly only one.")
 			; break;
 			case "sun":
 			array_push(tls_element_text_list, "Tho, the sun in this world shined bright today.")
