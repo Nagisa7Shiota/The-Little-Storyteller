@@ -7,6 +7,7 @@ inventory_player = new Inventory();
 inventory = new Inventory();
 
 gui_visible = false;
+display_text = false;
 key_released = true;
 
 display_set_gui_size(720,720);

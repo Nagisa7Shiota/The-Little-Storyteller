@@ -2,12 +2,25 @@
 // Sie können Ihren Code in diesem Editor schreiben
 
 if _is_unlocked{
+	if !gui_visible and collision_rectangle(1023, 479, 1071, 528, obj_player, true, false) and !obj_tls.tls_stop
+	{
+		display_text = true;
+	}
+	else{
+		display_text = false;
+	}
 	if keyboard_check(vk_enter)
 	and key_released
 	and collision_rectangle(1023, 479, 1071, 528, obj_player, true, false)
 	and !obj_tls.tls_stop
 	{
 		gui_visible = !gui_visible;
+		if gui_visible{
+			audio_play_sound(snd_table_open,0,false);
+		}
+		else{
+			audio_play_sound(snd_table_close,0,false);
+		}
 		obj_player.player_stop = !obj_player.player_stop;
 		key_released = false;
 	}

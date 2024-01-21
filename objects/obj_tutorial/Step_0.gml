@@ -1,15 +1,16 @@
 /// @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
+obj_inventory._is_unlocked = true;
+obj_table._is_unlocked = true;
 
 if tutorial_controle {
-	if keyboard_check_pressed(vk_right) or keyboard_check_pressed(vk_left){
+	if (keyboard_check(vk_right) or keyboard_check(vk_left)) and obj_tls.tls_counter == 0{
 		tutorial_controle = false;
 		show_debug_message("Controle finished");
-		alarm[0] = 0;
+		tutorial_text = true;
 		tutorial_table = true;
 	}
-	else if (obj_tls.alarm[0] <= 0) and obj_tls.tls_counter == 0{
-		if (alarm[0] <= 0){
+	else if (tutorial_text and obj_tls.tls_counter == 0){
 			array_push(obj_tls.tls_element_text_list,
 			"Once upon a time. A little fellow was in an empty space."
 			);
@@ -18,13 +19,9 @@ if tutorial_controle {
 			);
 		
 			obj_tls.tls_counter = array_length(obj_tls.tls_element_text_list);
-	
 			obj_tls.tls_stop = !obj_tls.tls_stop;
-			obj_player.player_stop = !obj_player.player_stop;
-			alarm[0] = 2 * room_speed;
+			tutorial_text = false;
 			obj_tls.alarm[0] = 1;	
-		}
-	
 	}
 }
 
@@ -38,10 +35,7 @@ if tutorial_table {
 	if obj_inventory.gui_visible{
 		show_debug_message("Table finished");
 		tutorial_table = false;
-	}
-	else if (obj_tls.alarm[0] <= 0) and obj_tls.tls_counter == 0{
-		
-		if (alarm[0] <= 0){
+	}else if (tutorial_text and obj_tls.tls_counter == 0){
 			array_push(obj_tls.tls_element_text_list,
 			"After moving around, it felt a bit lonely alone here."
 			);
@@ -58,11 +52,8 @@ if tutorial_table {
 			obj_tls.tls_counter = array_length(obj_tls.tls_element_text_list);
 	
 			obj_tls.tls_stop = !obj_tls.tls_stop;
-			obj_player.player_stop = !obj_player.player_stop;
-			alarm[0] = 2 * room_speed;
+			tutorial_text = false;
 			obj_tls.alarm[0] = 1;	
 		}
-	
-	}
 
 }

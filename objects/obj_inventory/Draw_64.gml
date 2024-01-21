@@ -65,6 +65,28 @@ draw_text(
 );
 
 draw_set(c_black, 0.5);
+draw_text_ext_transformed(
+ui_padding_x + (ui_border_size * 3) + 4 + 150, 
+ui_padding_y + (ui_border_size * 4) + 4,
+"Hover with the mouse",
+20,
+99,
+0.7,
+0.7,
+0);
+
+draw_set(c_white, 1);
+draw_text_ext_transformed(
+ui_padding_x + (ui_border_size * 3) + 150, 
+ui_padding_y + (ui_border_size * 4),
+"Hover with the mouse",
+20,
+99,
+0.7,
+0.7,
+0);
+
+draw_set(c_black, 0.5);
 draw_text(
 	ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 4,
 	ui_padding_y + (ui_border_size * 4) + 4,
@@ -77,6 +99,50 @@ draw_text(
 	ui_padding_y + (ui_border_size * 4),
 	"Table"
 );
+
+draw_set(c_black, 0.5);
+draw_text_ext_transformed(
+ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 4 + 150, 
+ui_padding_y + (ui_border_size * 4) + 4,
+"Press C to create",
+0,
+9999,
+0.7,
+0.7,
+0);
+
+draw_set(c_white, 1);
+draw_text_ext_transformed(
+ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 150, 
+ui_padding_y + (ui_border_size * 4),
+"Press C to create",
+0,
+9999,
+0.7,
+0.7,
+0);
+
+draw_set(c_black, 0.5);
+draw_text_ext_transformed(
+ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 4 + 150, 
+ui_padding_y + (ui_border_size * 4) + 4 + 30,
+"Press T to tell",
+0,
+9999,
+0.7,
+0.7,
+0);
+
+draw_set(c_white, 1);
+draw_text_ext_transformed(
+ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 150, 
+ui_padding_y + (ui_border_size * 4) + 30,
+"Press T to tell",
+0,
+9999,
+0.7,
+0.7,
+0);
 
 for (var row = 0; row < inventory_rows; row++){
 	var pos_y = ui_padding_y + (ui_border_size * 13) + (row * (ui_inventory_margin + ui_inventory_box));
