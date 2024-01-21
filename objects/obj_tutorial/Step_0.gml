@@ -1,8 +1,5 @@
 /// @description Hier Beschreibung einfügen
 // Sie können Ihren Code in diesem Editor schreiben
-obj_inventory._is_unlocked = true;
-obj_table._is_unlocked = true;
-
 if tutorial_controle {
 	if (keyboard_check(vk_right) or keyboard_check(vk_left)) and obj_tls.tls_counter == 0{
 		tutorial_controle = false;
