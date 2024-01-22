@@ -1,6 +1,9 @@
 sprite_index = spr_player_stand;
 move_wrap(true, false, 75);
 
+if obj_table._is_unlocked and !audio_is_playing(snd_whistle){
+	audio_play_sound(snd_whistle,0,true);
+}
 
 if !player_stop{
 	if keyboard_check(vk_right){

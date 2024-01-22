@@ -2,6 +2,7 @@
 // Sie können Ihren Code in diesem Editor schreiben
 if obj_inventory.gui_visible {
 	obj_inventory.gui_visible = !obj_inventory.gui_visible;
+	audio_play_sound(snd_table_close,0,false);
 }
 if obj_player.player_stop {
 	obj_player.player_stop = ! obj_player.player_stop;

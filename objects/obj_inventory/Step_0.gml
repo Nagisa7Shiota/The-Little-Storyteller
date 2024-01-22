@@ -52,6 +52,7 @@ if _is_unlocked{
 						
 							inventory_player.item_add(inventory_item[inventory_index].name, inventory_item[inventory_index].sprite);
 							inventory.item_remove(inventory_item[inventory_index].name);
+							audio_play_sound(snd_table_switch,0,false);
 						}
 						else{
 							show_debug_message("Nope");
@@ -66,6 +67,7 @@ if _is_unlocked{
 						
 							inventory.item_add(inventory_player_item[inventory_player_index].name, inventory_player_item[inventory_player_index].sprite);
 							inventory_player.item_remove(inventory_player_item[inventory_player_index].name);
+							audio_play_sound(snd_table_switch,0,false);
 						}
 						else{
 							show_debug_message("Nope");

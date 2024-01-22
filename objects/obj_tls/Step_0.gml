@@ -12,8 +12,9 @@ and obj_inventory.gui_visible
 	}	
 	if obj_inventory.inventory.item_find("rock") >= 0
 	and obj_inventory.inventory.item_find("tree") < 0
+	and obj_inventory.inventory_player.item_find("tree") < 0
 	and array_length(obj_inventory.inventory._inventory_items) = 1
-	and obj_item_tree._is_unlocked == true
+	and obj_item_tree._is_unlocked
 	{
 		obj_inventory.inventory_player.item_add("tree",spr_elements_tree);
 		audio_play_sound(snd_create_sound,0,false);
@@ -21,8 +22,9 @@ and obj_inventory.gui_visible
 	if obj_inventory.inventory.item_find("rock") >= 0
 	and obj_inventory.inventory.item_find("tree") >= 0
 	and obj_inventory.inventory.item_find("cloud") < 0
+	and obj_inventory.inventory_player.item_find("cloud") < 0
 	and array_length(obj_inventory.inventory._inventory_items) = 2
-	and obj_item_cloud._is_unlocked == true
+	and obj_item_cloud._is_unlocked
 	{
 		obj_inventory.inventory_player.item_add("cloud",spr_elements_cloud);
 		audio_play_sound(snd_create_sound,0,false);
@@ -30,8 +32,9 @@ and obj_inventory.gui_visible
 	if obj_inventory.inventory.item_find("rock") >= 0
 	and obj_inventory.inventory.item_find("cloud") >= 0
 	and obj_inventory.inventory.item_find("moon") < 0
+	and obj_inventory.inventory_player.item_find("moon") < 0
 	and array_length(obj_inventory.inventory._inventory_items) = 2
-	and obj_item_moon._is_unlocked == true
+	and obj_item_moon._is_unlocked
 	{
 		obj_inventory.inventory_player.item_add("moon",spr_elements_moon);
 		audio_play_sound(snd_create_sound,0,false);
@@ -39,8 +42,9 @@ and obj_inventory.gui_visible
 	if obj_inventory.inventory.item_find("tree") >= 0
 	and obj_inventory.inventory.item_find("cloud") >= 0
 	and obj_inventory.inventory.item_find("sun") < 0
+	and obj_inventory.inventory_player.item_find("sun") < 0
 	and array_length(obj_inventory.inventory._inventory_items) = 2
-	and obj_item_sun._is_unlocked == true
+	and obj_item_sun._is_unlocked
 	{
 		obj_inventory.inventory_player.item_add("sun",spr_elements_sun);
 		audio_play_sound(snd_create_sound,0,false);
@@ -48,8 +52,9 @@ and obj_inventory.gui_visible
 	if obj_inventory.inventory.item_find("sun") >= 0
 	and obj_inventory.inventory.item_find("moon") >= 0
 	and obj_inventory.inventory.item_find("star") < 0
+	and obj_inventory.inventory_player.item_find("star") < 0
 	and array_length(obj_inventory.inventory._inventory_items) = 2
-	and obj_item_star._is_unlocked == true
+	and obj_item_star._is_unlocked
 	{
 		obj_inventory.inventory_player.item_add("star",spr_elements_star);
 		audio_play_sound(snd_create_sound,0,false);
@@ -61,8 +66,9 @@ and obj_inventory.gui_visible
 	and obj_inventory.inventory.item_find("cloud") >= 0
 	and obj_inventory.inventory.item_find("tree") >= 0
 	and obj_inventory.inventory.item_find("rose") < 0
-	and array_length(obj_inventory.inventory._inventory_items) >= 5
-	and obj_item_rose._is_unlocked == true
+	and obj_inventory.inventory_player.item_find("rose") < 0
+	and array_length(obj_inventory.inventory._inventory_items) == 6
+	and obj_item_rose._is_unlocked
 	{
 		obj_inventory.inventory_player.item_add("rose", spr_elements_rose);
 		audio_play_sound(snd_create_sound,0,false);

@@ -24,6 +24,7 @@
     {"name":"obj_item_cloud","order":5,"path":"objects/obj_item_cloud/obj_item_cloud.yy",},
     {"name":"spr_elements_star","order":11,"path":"sprites/spr_elements_star/spr_elements_star.yy",},
     {"name":"obj_item_star","order":8,"path":"objects/obj_item_star/obj_item_star.yy",},
+    {"name":"snd_whistle","order":5,"path":"sounds/snd_whistle/snd_whistle.yy",},
     {"name":"draw_set","order":1,"path":"scripts/draw_set/draw_set.yy",},
     {"name":"bg_main_hall","order":2,"path":"sprites/bg_main_hall/bg_main_hall.yy",},
     {"name":"spr_elements_rock","order":5,"path":"sprites/spr_elements_rock/spr_elements_rock.yy",},
@@ -49,5 +50,6 @@
     {"name":"draw_reset","order":2,"path":"scripts/draw_reset/draw_reset.yy",},
     {"name":"spr_elements_sun","order":7,"path":"sprites/spr_elements_sun/spr_elements_sun.yy",},
     {"name":"spr_table","order":6,"path":"sprites/spr_table/spr_table.yy",},
+    {"name":"snd_table_switch","order":4,"path":"sounds/snd_table_switch/snd_table_switch.yy",},
   ],
 }

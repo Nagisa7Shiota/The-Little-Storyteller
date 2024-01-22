@@ -49,6 +49,7 @@
     {"id":{"name":"obj_item_cloud","path":"objects/obj_item_cloud/obj_item_cloud.yy",},},
     {"id":{"name":"spr_elements_star","path":"sprites/spr_elements_star/spr_elements_star.yy",},},
     {"id":{"name":"obj_item_star","path":"objects/obj_item_star/obj_item_star.yy",},},
+    {"id":{"name":"snd_whistle","path":"sounds/snd_whistle/snd_whistle.yy",},},
     {"id":{"name":"draw_set","path":"scripts/draw_set/draw_set.yy",},},
     {"id":{"name":"Inventory","path":"scripts/Inventory/Inventory.yy",},},
     {"id":{"name":"bg_main_hall","path":"sprites/bg_main_hall/bg_main_hall.yy",},},
@@ -76,6 +77,7 @@
     {"id":{"name":"spr_elements_sun","path":"sprites/spr_elements_sun/spr_elements_sun.yy",},},
     {"id":{"name":"spr_table","path":"sprites/spr_table/spr_table.yy",},},
     {"id":{"name":"spr_player_stand","path":"sprites/spr_player_stand/spr_player_stand.yy",},},
+    {"id":{"name":"snd_table_switch","path":"sounds/snd_table_switch/snd_table_switch.yy",},},
     {"id":{"name":"rm_main_hall","path":"rooms/rm_main_hall/rm_main_hall.yy",},},
   ],
   "RoomOrderNodes": [
